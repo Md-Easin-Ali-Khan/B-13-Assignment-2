@@ -10,31 +10,31 @@
 }
 
 /* Common style */
-.heading-style{
+.heading-style {
     color: #FFFFFF;
     font-size: 48px;
     font-weight: 700;
 }
 
-.paragraph-style{
+.paragraph-style {
     color: #ada6a6;
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    
+
 }
 
-.btn{
+.my-btn {
     color: #FFFFFF;
     background: var(--my-gradient-color);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 12px 16px;
     border: none;
     border-radius: 9999px;
 }
 
-.gradient-color{
+.gradient-color {
     background: var(--my-gradient-color);
     display: inline-block;
     -webkit-background-clip: text;
@@ -42,7 +42,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-:root{
+:root {
     --my-gradient-color: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
 }
 
@@ -60,31 +60,87 @@ Header section
 .logo>h1 {
     color: #FFFFFF;
     font-size: 43px;
+    font-weight: 800;
     cursor: pointer;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 32px;
 }
 
-.menu>li{
+.menu>li {
     list-style: none;
     cursor: pointer;
 }
 
-.menu>li>a{
+.menu>li>a {
     color: #c2baba;
     font-size: 16px;
     font-weight: normal;
     text-decoration: none;
 }
 
-.subscription>button{
+.subscription>button {
     text-align: center;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+/* ==========================================
+Hero section
+========================================== */
+.hero-section {
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 101px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container {
+    background-image: url(assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+    padding: 77.33px 116.67px 97.67px 116.67px;
+
+}
+
+.hero-section>h1 {
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+.hero-section>p {
+    margin-bottom: 24px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.hero-btn>button {
+    padding: 12px 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    white-space: nowrap;
+    display: flex;
+    gap: 18px;
+}
+
+.hero-btn>button:nth-child(2){
+    color: #00FF88;
+    background: none;
+    border: 2px solid #00FF88;
 }
