@@ -47,14 +47,15 @@
 }
 
 /* ==========================================
-Header section
+Header Section
 ========================================== */
 .nav-bar {
     padding: 30px 0;
     background-color: #1A0B2E;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 314px;
 }
 
 .logo>h1 {
@@ -91,7 +92,7 @@ Header section
 }
 
 /* ==========================================
-Hero section
+Hero Section
 ========================================== */
 .hero-section {
     background-image: url(assets/hero-bg.png);
@@ -139,8 +140,65 @@ Hero section
     gap: 18px;
 }
 
-.hero-btn>button:nth-child(2){
+.hero-btn>button:nth-child(2) {
     color: #00FF88;
     background: none;
     border: 2px solid #00FF88;
 }
+
+.hero-btn>button>img {
+    object-fit: contain;
+}
+
+hr {
+    border: .2px solid #302f2f;
+}
+
+/* ==========================================
+Podcast Section
+========================================== */
+.podcast-section {
+    background-color: #230E3D;
+    padding: 50px 0 120px 0;
+}
+
+.podcast-section>h1{
+    margin-bottom: 16px;
+}
+
+.podcast-section>h1,
+p{
+    text-align: center;
+}
+
+.podcast-p-2{
+    margin: 45px 0 80px 0;
+}
+
+.podcast-section>hr{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: .2px solid #302f2f;
+}
+
+/* About */
+.about{
+    margin: 80px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.about-item{
+    width: 240px;
+    text-align: center;
+}
+
+.about-item>h1{
+    color: #00FF88;
+}
+
+/* ==========================================
+Podcast Section
+========================================== */
