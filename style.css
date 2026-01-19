@@ -284,7 +284,8 @@ Featured Section
     margin-bottom: 40px;
 }
 
-.inner-feature{
+.inner-feature {
+    margin-bottom: 120px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -322,4 +323,47 @@ Featured Section
 
 .timespan>p {
     color: #00FF88;
+}
+
+/* Biography Section */
+.bio>h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.host {
+    background-color: #351165;
+    max-width: 1200px;
+    width: 100%;    
+    margin: 0 auto;
+    padding: 48.5px 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-content>h2{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.host-content>p{
+    margin-bottom: 16px;
+}
+
+.host-content>ul{
+    display: flex;
+    gap: 8px;
+}
+
+.host-content>ul>li{
+    padding: 12px 12px;
+    border: 2px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
