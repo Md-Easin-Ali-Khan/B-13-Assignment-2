@@ -158,24 +158,29 @@ hr {
 Podcast Section
 ========================================== */
 .podcast-section {
-    background-color: #230E3D;
+    background-color: #1A0B2E;
     padding: 50px 0 120px 0;
 }
 
-.podcast-section>h1{
+.podcast-section>h1 {
     margin-bottom: 16px;
 }
 
 .podcast-section>h1,
-p{
+p {
     text-align: center;
 }
 
-.podcast-p-2{
-    margin: 45px 0 80px 0;
+.podcast-para{
+    text-align: center;
 }
 
-.podcast-section>hr{
+.podcast-p-2 {
+    margin: 45px 0 80px 0;
+    text-align: center;
+}
+
+.podcast-section>hr {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -183,22 +188,84 @@ p{
 }
 
 /* About */
-.about{
-    margin: 80px 0 120px 0;
+.about {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 80px;
 }
 
-.about-item{
+.about-item {
     width: 240px;
     text-align: center;
 }
 
-.about-item>h1{
+.about-item>h1 {
     color: #00FF88;
 }
 
 /* ==========================================
-Podcast Section
+Grid Section
 ========================================== */
+
+.grid-section {
+    background-color: #230E3D;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.grid-section>h1{
+    margin-bottom: 40px;
+}
+
+.inner-grid {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.items {
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 40px
+}
+
+.items>h2{
+    color: #eae2e2;
+    font-weight: 900;
+}
+
+.items-1{
+    padding-top: 107.5px;
+    padding-bottom: 107.5px;
+    grid-row: span 2;
+}
+
+.items-2{
+    grid-column: span 2;
+}
+
+.items-3{
+    grid-column: span 2;
+}
+
+.items-4{
+    grid-column: span 2;
+}
+
+.items>img{
+    margin-bottom: 16px;
+}
+
+.items>h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.items>h2,
+p {
+    text-align: left;
+}
