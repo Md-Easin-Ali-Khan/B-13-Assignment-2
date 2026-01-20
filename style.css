@@ -51,8 +51,8 @@
 Header Section
 ========================================== */
 .nav-bar {
-    padding: 30px 0;
     background-color: #1A0B2E;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +92,10 @@ Header Section
     gap: 5px;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 /* ==========================================
 Hero Section
 ========================================== */
@@ -100,7 +104,6 @@ Hero Section
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: contain;
     padding: 101px 0;
     display: flex;
     align-items: center;
@@ -209,23 +212,22 @@ p {
 }
 
 .podcast-section>hr {
-    max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
+    margin-bottom: 80px;
     border: .2px solid #302f2f;
 }
 
 /* About */
 .about {
     margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .about-item {
-    width: 240px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-item>h1 {
@@ -417,16 +419,23 @@ Footer Section
 
 .footer-section>.logo>h1 {
     font-size: 65px;
-    /* margin-bottom: 32px; */
 }
 
 .footer-section>ul {
-    margin-bottom: 32px;
     display: flex;
     gap: 40px;
 }
 
-.footer-section>ul>li {
+.social-1,
+.social-2 {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social>li {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -439,13 +448,137 @@ Footer Section
 /* ====================================================================
 ============================= Responsive Part =========================
 ==================================================================== */
+@media (min-width: 577px) and (max-width: 1600px) {
+    .podcast-section>hr {
+        max-width: 1200px;
+        width: 100%;
+    }
 
-@media screen and (max-width:576px) {
-    
+    .about{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .about-item{
+        width: 240px;
+    }
 }
 
+@media (max-width: 576px) {
 
+    /* Nav bar */
+    .nav-bar {
+        justify-content: space-between;
+        padding: 20px;
+        gap: 0;
+    }
 
+    .nav-bar>ul {
+        display: none;
+    }
 
+    .subscription {
+        display: none;
+    }
 
+    .hamburger-menu {
+        display: block;
+    }
 
+    /* Hero Section */
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .img-container>img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .img-container {
+        padding: 80px;
+        background-size: contain;
+    }
+
+    .hero-section>p {
+        text-align: center;
+    }
+
+    .badge {
+        top: 40px;
+    }
+
+    /* podcast section */
+    .podcast-section>hr {
+        margin: 0 20px;
+    }
+
+    /* About */
+    .about {
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    /* Grid Section */
+    .grid-section>h1 {
+        margin: 0 20px;
+    }
+
+    .inner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .items {
+        margin: 0 20px;
+    }
+
+    .items-1 {
+        padding: 40;
+    }
+
+    .items-1,
+    .items-2,
+    .items-3,
+    .items-4 {
+        text-align: left;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /* Feature */
+    .inner-feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .host {
+        flex-direction: column;
+    }
+
+    .host-name,.host-discription{
+        text-align: center;
+    }
+
+    .host-content>ul {
+        justify-content: center;
+    }
+
+    /* footer */
+    .footer-section>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
